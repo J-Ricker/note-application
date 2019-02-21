@@ -6,9 +6,10 @@ const os = require('os');
 const _ = require('lodash');
 const notes = require('./notes')
 
-console.log(_.isString(true));
-console.log(_.isString('Andrew'));
-
+// console.log(_.isString(true));
+// console.log(_.isString('Andrew'));
+var filteredArray = _.uniq(['jeremy', 1, 'jeremy', 1, 2, 3, 4]);
+console.log(filteredArray);
 
 
 // var result = notes.add(2, 5);
