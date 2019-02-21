@@ -2,7 +2,11 @@
 console.log('starting app');
 
 const fs = require('fs');
-fs.appendFile('greetings.txt', 'hello-world', function (err) {
+const os = require('os');
+
+var user = os.userInfo();
+console.log(user);
+fs.appendFile('greetings.txt', `hello ${user.username}!`, function (err) {
     if (err) {
         console.log('unable to write to file');
     }
