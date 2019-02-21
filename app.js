@@ -3,10 +3,16 @@ console.log('starting app.js');
 
 const fs = require('fs');
 const os = require('os');
+const _ = require('lodash');
 const notes = require('./notes')
 
-var result = notes.add(2, 5);
-console.log(`Result: ${result}`);
+console.log(_.isString(true));
+console.log(_.isString('Andrew'));
+
+
+
+// var result = notes.add(2, 5);
+// console.log(`Result: ${result}`);
 
 
 // var user = os.userInfo();
