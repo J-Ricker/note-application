@@ -5,10 +5,14 @@ const fs = require('fs');
 const os = require('os');
 const notes = require('./notes')
 
-var user = os.userInfo();
+var result = notes.add(2, 5);
+console.log(`Result: ${result}`);
 
-fs.appendFile('greetings.txt', `hello ${user.username}!`, function (err) {
-    if (err) {
-        console.log('unable to write to file');
-    }
-});
+
+// var user = os.userInfo();
+
+// fs.appendFile('greetings.txt', `hello ${user.username}! you are ${notes.age}.`, function (err) {
+//     if (err) {
+//         console.log('unable to write to file');
+//     }
+// });
