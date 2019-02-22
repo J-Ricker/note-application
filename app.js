@@ -13,7 +13,7 @@ console.log('Command: ', command);
 console.log('Yargs:', argv);
 
 if (command === 'add') {
-    notes.addNotes(argv.title, argv.body);
+    var note = notes.addNotes(argv.title, argv.body);
 } else if (command === 'list') {
     notes.getAll();
 } else if (command === 'read') {
