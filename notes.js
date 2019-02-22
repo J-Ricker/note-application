@@ -26,7 +26,7 @@ var addNotes = (title, body) => {
         notes.push(note);
         saveNotes(notes);
         return note;
-    }
+    } 
 
 };
 
